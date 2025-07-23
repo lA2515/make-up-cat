@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GreenLeaf Tea Co.</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+    }
+
+    header {
+      background: #2e7d32;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #388e3c;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #2e7d32;
+    }
+
+    .product-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .product-table th,
+    .product-table td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: center;
+    }
+
+    .product-table th {
+      background-color: #81c784;
+    }
+
+    .form-section {
+      background: #ffffff;
+      padding: 20px;
+      margin-top: 40px;
+      border-radius: 8px;
+    }
+
+    .form-section input, 
+    .form-section select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-section input[type="submit"] {
+      background-color: #2e7d32;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .form-section input[type="submit"]:hover {
+      background-color: #1b5e20;
+    }
+
+    footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>GreenLeaf Tea Co.</h1>
+    <p>Fresh Organic Teas Delivered to Your Doorstep</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Register</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="container">
+
+    <h2>Our Bestselling Teas</h2>
+    <table class="product-table">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Tea Name</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="https://via.placeholder.com/100" alt="Green Tea"></td>
+          <td>Organic Green Tea</td>
+          <td>Soothing and refreshing green tea rich in antioxidants.</td>
+          <td>$9.99</td>
+        </tr>
+        <tr>
+          <td><img src="https://via.placeholder.com/100" alt="Black Tea"></td>
+          <td>Darjeeling Black Tea</td>
+          <td>A classic black tea from the Himalayan foothills.</td>
+          <td>$12.99</td>
+        </tr>
+        <tr>
+          <td><img src="https://via.placeholder.com/100" alt="Herbal Tea"></td>
+          <td>Chamomile Herbal Tea</td>
+          <td>Relaxing blend perfect for winding down.</td>
+          <td>$8.49</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="form-section">
+      <h2>Customer Registration</h2>
+      <form action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required>
+
+        <label for="address">Shipping Address:</label>
+        <input type="text" id="address" name="address" placeholder="123 Tea Street, Green Valley">
+
+        <label for="preferences">Favorite Tea Type:</label>
+        <select id="preferences" name="preferences">
+          <option>Green Tea</option>
+          <option>Black Tea</option>
+          <option>Herbal Tea</option>
+          <option>Oolong Tea</option>
+        </select>
+
+        <input type="submit" value="Register">
+      </form>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 GreenLeaf Tea Co. | Freshness in Every Sip</p>
+  </footer>
+
+</body>
+</html>
